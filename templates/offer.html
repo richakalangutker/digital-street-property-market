@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block title%}Offer{% endblock %}
+{% block content %}
+<div class="container">
+
+<!-- Main content goes here -->
+<div class="row">
+    <div class="col">
+        <br><h1>Make an offer for 1 Digital Street<br>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6">
+        <form action="buyer-confirm-offer" method="post">
+            <div class="form-group">
+                    <label for="amount">How much do you want to offer?</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="currency">£</span>
+                        </div>
+                        <input type="number" class="form-control" id="offer" name="offer" value="" aria-describedby="currency">
+                    </div>
+                </div>
+            <a href="{{ url_for('offer_submitted') }}"><button type="button" class="btn btn-primary">Make offer</button></a>
+        </form>
+    </div>
+</div>
+
+        </div>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "layout_gov.html" %}
+
+{% block title%}Offer{% endblock %}
+
+{% block content %}
+    <div class="container mt-5">
+         <div class="row">
+        <div class="col-sm ">
+          <h2>Titles</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm border">
+          Title #
+        </div>
+        <div class="col-sm border">
+          Owner
+        </div>
+        <div class="col-sm border">
+          Address
+        </div>
+          <div class="col-sm border">
+          Action
+        </div>
+      </div>
+    {% for title in titles %}
+        <div class="row">
+        <div class="col-sm border">
+          {{ title['title_number'] }}
+        </div>
+        <div class="col-sm border">
+           {{ title['owner'] }}
+        </div>
+        <div class="col-sm border">
+           {{ title['address'] }}
+        </div>
+        <div class="col-sm border">
+           <a href="{{ url_for('tokenize') }}">Split title</a>
+        </div>
+      </div>
+    {% endfor %}
+</div>
+{% endblock %}

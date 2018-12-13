@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+{% block title%}Home{% endblock %}
+{% block content %}
+    <div class="container">
+
+<!-- Main content goes here -->
+<br>
+<div class="row">
+    <div class="col">
+        <div class="card-deck">
+
+            <br>
+<div class="card border-primary">
+    <img class="card-img-top" src="{{ url_for('static', filename='images/home.png') }}" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">1 Digital Street<br>Bristol<br>BS2</h5>
+        <p class="lead"><strong>50% of 1 digital street</strong></p>
+        <p class="card-text">A beautifully presented 4 bedroom house within 0.5 miles of Cabot Court Shopping Centre</p>
+    </div>
+    <div class="card-footer">
+        <a href="{{ url_for('login') }}" class="btn btn-outline-primary">Make offer</a>
+    </div>
+</div>
+
+            <br>
+<div class="card border-primary">
+    <img class="card-img-top" src="{{ url_for('static', filename='images/home.png') }}" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">Royal York Crescent, Clifton<br>Bristol<br>BS8</h5>
+        <p class="lead"><strong>£530,000</strong></p>
+        <p class="card-text">Located on this prestigious address, enjoying stunning far reaching views over Bristol, this impressive first floor balcony flat must be viewed.</p>
+    </div>
+    <div class="card-footer">
+        <a href="{{ url_for('login') }}" class="btn btn-outline-primary">Make offer</a>
+    </div>
+</div>
+
+            <br>
+<div class="card border-primary">
+    <img class="card-img-top" src="{{ url_for('static', filename='images/home.png') }}" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">45 Devonshire Road<br>Westbury Park<br>BS6</h5>
+        <p class="lead"><strong>£375,000</strong></p>
+        <p class="card-text">For sale with no onward chain. This spacious and tasteful three double bedroom freehold maisonette has a lovely location in Bristol's leafy Westbury Park suburb, just around the corner from the picturesque green open spaces of The Downs.</p>
+    </div>
+    <div class="card-footer">
+        <a href="{{ url_for('login') }}" class="btn btn-outline-primary">Make offer</a>
+    </div>
+</div>
+
+        </div>
+    </div>
+</div>
+<br>
+
+        </div>
+{% endblock %}
